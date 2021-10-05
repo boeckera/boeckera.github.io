@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Age-metallicity distributions from integrated spectra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<style>
+body,html{
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica,sans-serif;
+  font-weight: lighter;
+  line-height: 150%;
+  color: #333;
+  background-color: #E7E6E6;
+  font-size: 17px;
+}
+h1,h2{
+  font-weight: lighter;
+}
+.container{
+  display: flex;
+  padding: 25px 25px 25px 25px;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: top;
+  justify-content: center;
+  background-color: white;
+  gap: 10px;
+}
+.image{
+  flex-basis: 100%;
+}
+.text{
+  width: 40%;
+  padding-right: 150px;
+  padding-left: 150px;
+  text-align: left;
+}
+.page{
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+a:link {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+/* visited link */
+a:visited {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+/* mouse over link */
+a:hover {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+/* selected link */
+a:active {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.topnav{
+  /*background-color: #333;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-left: 10px;
+  top: 0;
+  position: fixed;
+  transition: top 1s;*/
+  width: 106px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #333; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 8px;
+  transition: top 0.3s;
+  display: block;
+}
+.topnav a{
+  /*float: left;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;*/
+  color: white;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #333;
+  display: block;
+}
+.topnav a:hover{
+  background-color: #E7E6E6;
+  color: black;
+}
+.topnav a:active{
+  background-color: #333;
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="topnav" id="topnav">
+      <a class="active" href="index.html"> Back </a>
+  </div>
+
+<div class="page">
+
+  <h1>Recovery of age-metallicity distributions from integrated spectra</h1>
+  <div class="container">
+    <div class="image" style="align-self: center;">
+    <img src="M54_hst_2.jpeg" width="80%">
+    </div>
+    <div class="image" style="padding-right:25px;">
+    <img src="compare_single_integrated_2.pdf" width="100%">
+    <p style="text-align: justify;"> In this work I analyzed the stellar populations of M54, the nucleus of the Sagittarius Dwarf Galaxy, as recovered from its integrated spectrum coming from observations with
+       <a href="https://www.eso.org/sci/facilities/develop/instruments/muse.html"> MUSE</a> and <a href="https://rsaa.anu.edu.au/observatories/instruments/wide-field-spectrograph-wifes"> WiFes</a>.
+       Due to the proximity of M54, its individual stars can be resolved and characterized by their ages and metallicities (as was done by <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...886...57A/abstract"> Alfaro-Cuello et al., 2019</a>).
+        Therefore, M54 provides an ideal test case of comparing age-metallicity distributions recovered from individual stellar measurements (panel a) with those recovered from the integrated spectrum (panel b). As seen with both methods,
+      M54 consists of old, metal-poor stars as well as younger, metal-rich stars. </p>
+    <p style="text-align: justify;"> In <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...896...13B/abstract"> my paper</a>, I also show, among other results, that the integrated light measurements are robust
+    against blue horizontal branch stars as well as largely insensitive to the magnitude limit of the observations. This study provides strong evidence that age-metallicity distrubtions can be reliably detected from integrated spectra,
+    which will provide a whole new wealth of information for many extragalactic systems, where previously only average stellar population quantities were available.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

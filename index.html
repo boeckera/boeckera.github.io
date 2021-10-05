@@ -1,83 +1,370 @@
-<!<!DOCTYPE html>
-
-<style>
-  .page{
-    height: 200vh;
-    background-color: white;
-    width: 100vw;
-  }
-  .container{
-    width: 50vw;
-  }
-  *{
-    font-family: Arial,Helvetica,sans-serif;
-  }
-  p{
-    text-align: justify;
-  }
-  a{
-    background-color: coral;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-  }
-  a:hover{
-    background-color: blue;
-  }
-</style>
-
+<!DOCTYPE html>
 <html>
+<head>
+<title>Alina Boecker's Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<style>
+body,html{
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica,sans-serif;
+  font-weight: lighter;
+  line-height: 200%;
+  color: #333;
+  background-color: #E7E6E6;
+  font-size: 18px;
+}
+h1,h2{
+  font-weight: lighter;
+}
+img{
+  max-width: 100%;
+}
+  .container{
+    display: flex;
+    padding: 25px 25px 25px 25px;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .image{
+    flex-basis: 20%;
+  }
+  .text{
+    width: 40%;
+    padding-right: 150px;
+    padding-left: 150px;
+    text-align: left;
+  }
+  .page{
+    text-align: center;
+    align-items: center;
+    width: 100%-106px;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 106px;
+  }
+  #topnav{
+    /*background-color: #333;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 10px;
+    top: 0;
+    position: fixed;
+    transition: top 1s;*/
+    width: 106px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #333; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 8px;
+    transition: top 0.3s;
+    display: block;
+    animation: fadeIn ease 5s;
+  }
+  #topnav a{
+    /*float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;*/
+    color: white;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #333;
+    display: block;
+  }
+  #topnav a:hover{
+    background-color: #E7E6E6;
+    color: black;
+  }
+  #topnav a:active{
+    background-color: #333;
+    color: white;
+  }
+
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    #topnav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    #topnav a {float: left;}
+    /*div.content {margin-left: 0;}*/
+  }
+
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    #topnav a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .hero-image {
+  background-image: url("hintergrund.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  animation: fadeIn ease 5s;
+  }
+  .hero-text {
+  text-align: left;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  }
+  /* unvisited link */
+  .text a:link {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  /* visited link */
+  .text a:visited {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  /* mouse over link */
+  .text a:hover {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  /* selected link */
+  .text a:active {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  .container3 {
+    margin: 0;
+    text-decoration: none;
+    background-color: white;
+    color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .container2 a{
+    box-shadow: 0 0 1em #333;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0;
+    text-decoration: none;
+    background-color: white;
+    color: #333;
+    display: block;
+  }
+
+  /* unvisited link */
+  .container2 a:link {
+    color: #333;
+    text-decoration: none;
+    background-color: white;
+  }
+
+  /* visited link */
+  .container2 a:visited {
+    color: #333;
+    text-decoration: none;
+    background-color: white;
+  }
+
+  /* mouse over link */
+  .container2 a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    box-shadow: 0 0 1em #333;
+  }
+
+  /* selected link */
+  .container2 a:active {
+    color: #333;
+    text-decoration: none;
+    background-color: white;
+  }
+
+  @keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@media screen and (max-width: 500px) {
+  #topnav a {
+    float: none;
+    display: block;
+  }
+}
+
+</style>
+</head>
+
 <body>
-<title>Example Title</title>
-<div style="position: fixed";>
-  <ul>
-    <a href="#home"> Home </a>
-    <a href="#research"> Research </a>
-    <a href="#about"> About </a>
-    <a href="#contact"> Contact </a>
-  </ul>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px;">Alina Boecker</h1>
+    <h2 style="font-size:25px;">astrophysicist</h2>
+  </div>
 </div>
 
-<div class="page">
-  <center>
-  <div class="container1">
-    <img style="margin-top:20vh;" src="alina_2.jpg" width="500">
-    <h1>Alina Boecker </h1>
-    <p>I like Astronomy</p>
-    <ul>
-      <a href="#research"> Research </a>
-      <a href="#about"> About </a>
-      <a href="#contact"> Contact </a>
-    </ul>
+  <div class="container" id="aboutme">
+    <div class="image">
+    <img src="alina_2.jpg" style="width:250px; border-radius: 50%;">
+    </div>
+    <div class="text" style="padding-left:50px; padding-right:0px">
+    <h1>About Me</h1>
+    <p>Hi, my name is Alina Boecker. I am currently a PhD student at the <a href="https://www.mpia.de/en">Max-Planck-Institute for Astronomy in Heidelberg, Germany</a>
+      and a fellow of the <a href="https://www.imprs-hd.mpg.de/272029/Boecker-Alina"> International Max Planck Research School for Astronomy and Cosmic Physics at the University of Heidelberg</a>.
+      I am a member of the <a href="https://www.mpia.de/galactic-nuclei"> Galactic Nuclei Research Group</a> lead by Dr. Nadine Neumayer. I am also an <a href="#outreach"> MPIA Outreach fellow</a>.</p>
+        <a href="mailto:boecker@mpia.de">Email me</a>        <a href="https://ui.adsabs.harvard.edu/search/filter_aff_facet_hier_fq_aff=AND&filter_aff_facet_hier_fq_aff=aff_facet_hier%3A%220%2FMax%20Planck%22&filter_author_facet_hier_fq_author=AND&filter_author_facet_hier_fq_author=author_facet_hier%3A%220%2FBoecker%2C%20A%22&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq=%7B!type%3Daqp%20v%3D%24fq_aff%7D&fq_aff=(aff_facet_hier%3A%220%2FMax%20Planck%22)&fq_author=(author_facet_hier%3A%220%2FBoecker%2C%20A%22)&q=%20author%3A%22Boecker%2Calina%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">Publications</a>        <a href="https://orcid.org/0000-0003-2945-106X">OrcID</a>
+    </div>
   </div>
-  </center>
-</div>
+
+  <div class="topnav" id="topnav">
+      <a class="active" href="#top"> Top </a>
+      <a href="#aboutme"> About Me </a>
+      <a href="#research"> Research </a>
+      <a href="#talks"> Talks </a>
+      <a href="#outreach"> Outreach </a>
+  </div>
 
 <div class="page" id="research">
-  <center>
-  <div class="container1">
-    <h1 style="margin-top:20vh;">What I do </h1>
-    <p>Astronomy</p>
+  <h1 style="font-size:50px;">Research</h1>
+  <div class="container" style="justify-content: space-evenly; align-items: center; align-content: space-around">
+  <div class="image" style="flex-basis: 30%;">
+  <div class="container2">
+  <a href="aboutmergerhistories.html">
+      <h2 style="text-align: center; text-decoration: underline;">Merger Histories of Galaxies</h2>
+      <img src="satellitemassfunction.pdf" width=400px>
+      <p style="text-align: justify; line-height: 150%;font-size: 18px;"> I am interested in disentangling which stars in a galaxy were born from its own gas rescources ("in-situ" origin)
+        and which were brought in by the accretion of other, smaller galaxies ("ex-situ" origin). The in-situ or ex-situ origin of stellar populations inside
+         a galaxy are imprinted on their properties such as their age or metallicity. We can measure such properties from integrated light spectra and recover
+         the mass function of satellites galaxies that completely merged with a galaxy of interest.
+         This is a new observational method, which I developed and tested during my Bachelor's and Master's thesis. </p>
+  <span class="container2"></span>
   </div>
-  </center>
+  </a>
+  </div>
+  <div class="image" style="flex-basis: 30%;">
+  <div class="container2">
+  <a href="aboutagemetallicitydistributions.html">
+      <h2 style="text-align: center; text-decoration: underline;">Age-Metallicity Distributions from Integrated Spectra</h2>
+      <img src="compare_single_integrated_3.pdf" width=400px>
+      <p style="text-align: justify; line-height: 150%;font-size: 18px;"> With this project I show that we are able to recover the distributions of ages and metallicities of stellar populations from a single integrated spectrum
+         in agreement with resolved measurements. Whereas the latter is often thought of to be more reliable, it can only be applied to a few nearby systems. Therefore, it is crucial that
+         we develop and test methods that can ultimately provide us with the same information about an object's stellar population content using integrated light alone.</p>
+   <span class="container2"></span>
+   </div>
+   </a>
+  </div>
+  <div class="image" style="flex-basis: 30%;">
+  <div class="container2">
+  <a href="aboutcentersintng.html">
+      <h2 style="text-align: center; text-decoration: underline;">Build-up of Galaxy Centers in TNG50 simulation</h2>
+      <img src="central_mass.pdf" width=400px>
+      <p style="text-align: justify; line-height: 150%;font-size: 18px;">My current project focusses on the very central few hundred parsecs of galaxies in the TNG50 simulations. With such simulations, we
+      can track back stars in time and determine where they were born and what properties they have. I categorize stars depending on whether they were born inside the center
+      and remain there throughout their life ("in-situ"), were born somewhere else inside the galaxy and then moved to center ("migrated") or if they were brought in from the
+      merger with other galaxies ("ex-situ").</p>
+  <span class="container2"></span>
+  </div>
+  </a>
+  </div>
+  </div>
 </div>
 
-<div class="page" id="about">
-  <center>
-  <div class="container1">
-    <h1 style="margin-top:20vh;">About me</h1>
-    <p>Astronomy</p>
+<div class="page" id="talks">
+  <h1 style="font-size:50px;">Talks</h1>
+  <div class="container3">
+  <div class="container" style="box-shadow: 0 0 1em #333; padding: 0.5em 1em 0.5em 1em;">
+  <div class="image">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dimZ-1OYSrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="text">
+      <h2 style="text-decoration: underline; text-align: center;">Linking Galactic and extragalactic stellar populations with nuclear star clusters</h2>
+      <p style="text-align: justify;"> Watch my talk from the
+        <a href="https://extragalactic-milkyways.org/virtual_meeting/#one">"Linking the Galactic and Extragalactic"</a> virtual meeting on 3rd - 4th December 2020, which was voted in the top 4 of all talks at the conference.
+      I show how the age and metallicity distribution of M54, the nucleus of the Sagittarius dwarf spheriodal galaxy, can be inferred from its integrated spectrum in agreement with measurements from its individual stars.
+      This implies that distributions of stellar population properties can be reliably recovered from more distant object, where only integrated light measurements are available. </p>
+    </div>
+    </div>
+    </div>
+    <div class="container3">
+    <div class="container" style="box-shadow: 0 0 1em #333; padding: 0.5em 1em 0.5em 1em;">
+    <div class="text">
+      <h2 style="text-decoration: underline; text-align: center;">Reconstructing a galaxy's accretion history from integrated spectra</h2>
+      <p style="text-align: justify;">Watch a talk I gave at the online workshop <a href="https://www.esi.ac.at/events/e389/">"Tomographic Reconstructions and their Startling Applications"</a>
+        hosted at the Erwin Schrödinger Institute for Mathematics and Physics in Vienna and taken place from 15th - 25th March 2021. This talk focuses on letting other scientists understand how I apply "tomographic reconstruction"
+        to a galaxy's spectrum in order to reconstruct its merger history. At the beginning of the talk I provide background information to explain to the broader audience how galaxies form and evolve. </p>
+    </div>
+    <div class="image">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jh6RSrML3lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
-  </center>
+  </div>
 </div>
 
-<div class="page" id="contact">
-  <center>
-  <div class="container1">
-    <h1 style="margin-top:20vh;">My Contact </h1>
-    <p>Astronomy</p>
+<div class="page" id="outreach">
+  <h1 style="font-size:50px;">Outreach</h1>
+  <div class="container">
+  <div class="text" style="width:50%;padding-left:0px;padding-right:100px;text-align:justify">
+    <p>To bring the fascination of astronomy closer to the public I am part of the volantary Outreach Fellows at MPIA. As a cooperation between the MPIA (<a href="https://www.mpia.de/en">Max-Planck-Institute for Astronomy</a>),
+      the LSW (<a href="https://www.lsw.uni-heidelberg.de/?lang=en">Landessternwarte</a>) and the HdA (<a href="https://www.haus-der-astronomie.de/en">Haus der Astronomie</a>), we offer <a href="https://www.haus-der-astronomie.de/3799502/Astronomy-tours-at-the-Koenigstuhl">free guided tours</a> to share our work as astronomers up on the Königstuhl mountain. Our tours involve a planetarium show
+      presenting the current research being done at the astronomy institutes in Heidelberg, a fly through the univserse as well as visits to our telescopes, modern and historic. </p>
+    <p> I was also co-organizing the <a href="https://www.girls-day.de">Girl's Day</a> 2019 as well as a part of the Girl's Day 2021, a workshop to give girls a hands-on feeling for the work of an astronomer and fascinate them for (astro)physics.
+    In 2019 for example, we operated small, remote telescopes to take beautiful pictures of nearby galaxies. They expierenced how we astronomers use filters in different wavelengths to create these colorful images
+     and learn about the physics behind them. The picture to the right of the Whirlpool Galaxy (M51) was taken on that day.</p>
   </div>
-  </center>
+  <div class="image" style="flex-basis: 40%;">
+    <div class="container" style="box-shadow: 0 0 1em #333; padding: 1em 1em 1em 1em;">
+  <img src="m51.png" width="100%">
+  </div>
+  </div>
+  </div>
 </div>
+
+<script>
+
+/*var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("topnav").style.top = "0";
+  } else {
+    document.getElementById("topnav").style.top = "-250px";
+  }
+  prevScrollpos = currentScrollPos;
+}*/
+/*function top() {
+    window.scrollBy({ top: 350, left: 0, behavior: "smooth" })
+};
+
+function bottom() {
+    window.setTimeout( function () { top(); }, 3000 );
+};
+bottom();*/
+</script>
 </body>
 </html>
