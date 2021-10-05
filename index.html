@@ -31,6 +31,7 @@ img{
   }
   .image{
     flex-basis: 20%;
+    flex-wrap: wrap;
   }
   .text{
     width: 40%;
@@ -47,6 +48,7 @@ img{
     padding-bottom: 5px;
     margin-left: 106px;
   }
+
   #topnav{
     /*background-color: #333;
     overflow: hidden;
@@ -67,6 +69,7 @@ img{
     display: block;
     animation: fadeIn ease 5s;
   }
+
   #topnav a{
     /*float: left;
     color: #333;
@@ -81,6 +84,7 @@ img{
     background-color: #333;
     display: block;
   }
+
   #topnav a:hover{
     background-color: #E7E6E6;
     color: black;
@@ -98,14 +102,9 @@ img{
       position: relative;
     }
     #topnav a {float: left;}
-    /*div.content {margin-left: 0;}*/
-  }
-
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    #topnav a {
-      text-align: center;
-      float: none;
+    .page {
+      width: 100%;
+      margin-left: 0px;
     }
   }
 
@@ -257,7 +256,7 @@ img{
   <div class="container2">
   <a href="aboutmergerhistories.html">
       <h2 style="text-align: center; text-decoration: underline;">Merger Histories of Galaxies</h2>
-      <img src="satellitemassfunction.pdf" width=400px>
+      <img src="satellitemassfunction.png" width=400px>
       <p style="text-align: justify; line-height: 150%;font-size: 18px;"> I am interested in disentangling which stars in a galaxy were born from its own gas rescources ("in-situ" origin)
         and which were brought in by the accretion of other, smaller galaxies ("ex-situ" origin). The in-situ or ex-situ origin of stellar populations inside
          a galaxy are imprinted on their properties such as their age or metallicity. We can measure such properties from integrated light spectra and recover
@@ -271,7 +270,7 @@ img{
   <div class="container2">
   <a href="aboutagemetallicitydistributions.html">
       <h2 style="text-align: center; text-decoration: underline;">Age-Metallicity Distributions from Integrated Spectra</h2>
-      <img src="compare_single_integrated_3.pdf" width=400px>
+      <img src="compare_single_integrated_3.png" width=400px>
       <p style="text-align: justify; line-height: 150%;font-size: 18px;"> With this project I show that we are able to recover the distributions of ages and metallicities of stellar populations from a single integrated spectrum
          in agreement with resolved measurements. Whereas the latter is often thought of to be more reliable, it can only be applied to a few nearby systems. Therefore, it is crucial that
          we develop and test methods that can ultimately provide us with the same information about an object's stellar population content using integrated light alone.</p>
@@ -283,7 +282,7 @@ img{
   <div class="container2">
   <a href="aboutcentersintng.html">
       <h2 style="text-align: center; text-decoration: underline;">Build-up of Galaxy Centers in TNG50 simulation</h2>
-      <img src="central_mass.pdf" width=400px>
+      <img src="central_mass.png" width=400px>
       <p style="text-align: justify; line-height: 150%;font-size: 18px;">My current project focusses on the very central few hundred parsecs of galaxies in the TNG50 simulations. With such simulations, we
       can track back stars in time and determine where they were born and what properties they have. I categorize stars depending on whether they were born inside the center
       and remain there throughout their life ("in-situ"), were born somewhere else inside the galaxy and then moved to center ("migrated") or if they were brought in from the
