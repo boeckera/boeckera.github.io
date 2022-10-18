@@ -1,369 +1,237 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-<title>Alina Boecker's Website</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-<style>
-body,html{
-  height: 100%;
-  margin: 0;
-  font-family: Helvetica,sans-serif;
-  font-weight: lighter;
-  line-height: 200%;
-  color: #333;
-  background-color: #E7E6E6;
-  font-size: 18px;
-}
-h1,h2{
-  font-weight: lighter;
-}
-img{
-  max-width: 100%;
-}
-  .container{
-    display: flex;
-    padding: 25px 25px 25px 25px;
-    margin-left: 0;
-    margin-right: 0;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-  }
-  .image{
-    flex-basis: 20%;
-    flex-wrap: wrap;
-  }
-  .text{
-    width: 40%;
-    padding-right: 150px;
-    padding-left: 150px;
-    text-align: left;
-  }
-  .page{
-    text-align: center;
-    align-items: center;
-    width: 100%-106px;
-    height: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 106px;
-  }
+	<head>
+		<title>Dr. Alina Boecker's Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-  #topnav{
-    /*background-color: #333;
-    overflow: hidden;
-    padding-top: 10px;
-    padding-left: 10px;
-    top: 0;
-    position: fixed;
-    transition: top 1s;*/
-    width: 106px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #333; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 8px;
-    transition: top 0.3s;
-    display: block;
-    animation: fadeIn ease 5s;
-  }
+		<!-- Header -->
+			<header id="header">
+				<h1>Dr. Alina Boecker</h1>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#one">About me</a></li>
+						<li><a href="#work">My Research</a></li>
+						<li><a href="#talks">Talks</a></li>
+						<li><a href="#outreach">Outreach</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
 
-  #topnav a{
-    /*float: left;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;*/
-    color: white;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    background-color: #333;
-    display: block;
-  }
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Hi. I am Alina Boecker.</h2>
+					</header>
+					<p>I am an astrophysicst and currently a postdoc at the Instituto de Astrofísica de Canarias located in
+						Tenerife working with Dr. Ignacio Martín-Navarro. My research focusses on galaxy formation and evolution in a cosmological context.</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
 
-  #topnav a:hover{
-    background-color: #E7E6E6;
-    color: black;
-  }
-  #topnav a:active{
-    background-color: #333;
-    color: white;
-  }
+		<!-- One -->
+			<section id="one" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>About me</h2>
+					</header>
+					<p>I completed my PhD at the Max-Planck-Insitute for Astronomy (MPIA, Heidelberg, Germany)
+						in the <a style="color: #FF9966;" href="https://www.mpia.de/galactic-nuclei"> "Galactic Nuclei"</a> research group led by Dr. Nadine Neumayer.
+						I am also closely working together with the <a style="color: #FF9966;"  href="https://www.mpia.de/gc-theory"> "Galaxies and Cosmology Theory"</a> group led by Dr. Annalisa Pillepich.
+						<a style="color: #FF9966;"  href="boecker_cv.pdf">You can find a detailed CV here.</a></p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
 
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 700px) {
-    #topnav {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    #topnav a {float: left;}
-    .page {
-      width: 100%;
-      margin-left: 0px;
-    }
-  }
+		<!-- Work -->
+			<section id="work" class="main style3 secondary">
+				<div class="content">
+					<header>
+						<h2>My Research</h2>
+						<p>I am interested in how galaxies assemble their stellar mass in a cosmological context.
+						I use spectroscopic observations as well as state-of-the-art cosmolosigcal, hydrodynamical simulations to understand the connection
+						between a galaxy's stellar population properties, like their ages and metallicties, and past merger events.</p>
+					<ul class="icons">
+						<li style="margin-right: 5em; align-items: center"><a href="https://orcid.org/0000-0003-2945-106X" class="icon brands fa-orcid"></a></li>
+						<li style="margin-right: 5em; display: inline-block; align-items: center"><a href="https://archiv.ub.uni-heidelberg.de/volltextserver/32002/1/Thesis_Boecker.pdf">My Thesis</a></li>
+						<li style="align-items: center"><a href="https://ui.adsabs.harvard.edu/search/q=docs(library%2Fg9sgoKUoRxiL7UB-L-8ueQ)&sort=date%20desc%2C%20bibcode%20desc&p_=0"><img src="assets/webfonts/ads_partial_logo_dark_background.svg"
+							alt="ADS" width="60px" height="60px" display=block></a></li>
+					</ul>
+					</header>
+			</section>
 
-  .hero-image {
-  background-image: url("hintergrund.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  animation: fadeIn ease 5s;
-  }
-  .hero-text {
-  text-align: left;
-  position: absolute;
-  top: 15%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  color: #333;
-  }
-  /* unvisited link */
-  .text a:link {
-    color: #333;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
+			<section id="five" class="main style2 right fullscreen">
+				<div class="content box style2" style="width: 60%">
+				<header>
+					<h2 style="text-align: right">Stellar Population in SDSS and TNG50</h2>
+					<p style="text-align: right"> In my most recent project I constructed realistic SDSS-like mock spectra from the TNG50 simulations
+						to facilitate a fair comparison between theoretical predictions of stellar populations properties of galaxies and those measured from SDSS observations.
+						Preliminary results show that there is a disagreement in the fundamental mass-metallicity relation, which subgrid models used in current cosmological simulations
+						and observational modelling techniques. </p>
+				</header>
+				</div>
+			</section>
 
-  /* visited link */
-  .text a:visited {
-    color: #333;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
+			<section id="four" class="main style2 left fullscreen">
+				<div class="content box style2" style="width: 60%">
+				<header>
+					<h2 style="text-align: left">Build-up of Galaxy Centers in the TNG50 simulation</h2>
+					<p style="text-align: left">I investigated the stellar mass build-up of the central few hundred parsecs of galaxies in the TNG50 simulations. With such simulations, we
+					can track back stars in time and determine where they were born and what properties they have. Stars in the center of galaxies of different origins depending on whether they were born inside the center
+					and remain there throughout their life ("in-situ"), were born somewhere else inside the galaxy and then moved to center ("migrated") or if they were brought in from the
+					merger with other galaxies ("ex-situ"). While in-situ stars are most prominent, interestingly migrated stars make up as much as 40% to the central galaxy mass.
+					Remarkably, ex-situ stars make it to the center of almost every galaxy and can contribute over half of the total mass in a galaxy’s center.
+					Thus, galactic centers serve as a laboratory of diverse formation pathways of galaxies.</p>
+				</header>
+				</div>
+			</section>
 
-  /* mouse over link */
-  .text a:hover {
-    color: #333;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
+			<section id="three" class="main style2 right fullscreen">
+				<div class="content box style2" style="width: 60%">
+				<header>
+					<h2 style="text-align: right">Age-Metallicity Distributions from Integrated Spectra</h2>
+					<p style="text-align: right">I show in <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...896...13B/abstract"> my publication</a> that we are able to recover the distributions of ages and metallicities of stellar populations from a single integrated spectrum
+						 in agreement with resolved measurements. Whereas the latter is often thought of to be more reliable, it can only be applied to a few nearby stellar systems. Therefore, it is crucial that
+						 we develop and test methods that can ultimately provide us with the same information about an object's stellar population content using integrated light alone.</p>
+				</header>
+				</div>
+			</section>
 
-  /* selected link */
-  .text a:active {
-    color: #333;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
+			<section id="two" class="main style2 left fullscreen">
+				<div class="content box style2" style="width: 60%">
+				<header>
+					<h2 style="text-align: left">Merger Histories of Galaxies</h2>
+					<p style="text-align: left">I am interested in disentangling which stars in a galaxy were born from its own gas rescources ("in-situ" origin)
+						and which were brought in by the accretion of other, smaller galaxies ("ex-situ" origin). The in-situ or ex-situ origin of stellar populations inside
+						 a galaxy are imprinted on their properties such as their age or metallicity. We can measure such properties from integrated light spectra and recover
+						 the mass function of satellites galaxies that completely merged with a galaxy of interest.
+						 This is a new observational method, which I developed and tested in <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.491..823B/abstract">
+						 my publication</a>. A first appliation of this method to MUSE observations was done in
+						  <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.3089D/abstract"> Davison+, incl. Boecker, 2021</a>. </p>
+				</header>
+				</div>
+			</section>
 
-  .container3 {
-    margin: 0;
-    text-decoration: none;
-    background-color: white;
-    color: #333;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 
-  .container2 a{
-    box-shadow: 0 0 1em #333;
-    padding: 0.5em 1em 0.5em 1em;
-    margin: 0;
-    text-decoration: none;
-    background-color: white;
-    color: #333;
-    display: block;
-  }
+					<!-- Gallery  -->
+					<!--	<div class="gallery">
+							<article class="from-left">
+								<a href="aboutmergerhistories.html" data-poptrox="ignore" class="image fit"><img src="images/fulls/satellitemassfunction.png" title="The Anonymous Red" alt="" /></a>
+								<p style="text-align: right">I am interested in disentangling which stars in a galaxy were born from its own gas rescources ("in-situ" origin)
+					        and which were brought in by the accretion of other, smaller galaxies ("ex-situ" origin). The in-situ or ex-situ origin of stellar populations inside
+					         a galaxy are imprinted on their properties such as their age or metallicity. We can measure such properties from integrated light spectra and recover
+					         the mass function of satellites galaxies that completely merged with a galaxy of interest.
+					         This is a new observational method, which I developed and tested during my Bachelor's and Master's thesis.</p>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/compare_single_integrated_3.png" class="image fit"><img src="images/fulls/compare_single_integrated_3.png" title="Airchitecture II" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/central_mass.png" class="image fit"><img src="images/fulls/central_mass.png" title="Air Lounge" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+							</article>
+						</div>
 
-  /* unvisited link */
-  .container2 a:link {
-    color: #333;
-    text-decoration: none;
-    background-color: white;
-  }
+				</div>
+			</section> -->
 
-  /* visited link */
-  .container2 a:visited {
-    color: #333;
-    text-decoration: none;
-    background-color: white;
-  }
+			<!-- Talks -->
+			<section id="talks" class="main style3 primary">
+				<div class="content box">
+					<header>
+						<h2>Talks</h2>
+						<p>Here you can watch two recorded talks I gave about my research at the <a href="https://extragalactic-milkyways.org/virtual_meeting/#one">"Linking the Galactic and Extragalactic"</a> virtual meeting
+							and the<a href="https://www.esi.ac.at/events/e389/">"Tomographic Reconstructions and their Startling Applications"</a> online workshop.
+						</p>
+					</header>
 
-  /* mouse over link */
-  .container2 a:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #333;
-    box-shadow: 0 0 1em #333;
-  }
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-top">
+								<a href="https://youtu.be/dimZ-1OYSrU" data-poptrox="youtube,800x480" class="image fit"><img src="images/thumbs/thumbnail2.png" title="Linking Galactic and extragalactic stellar populations with nuclear star clusters" alt="" /></a>
+							</article>
+							<article class="from-bottom">
+								<a href="https://youtu.be/Jh6RSrML3lo" data-poptrox="youtube,800x480" class="image fit"><img src="images/thumbs/thumbnail1.png" title="Reconstructing a galaxy's accretion history from integrated spectra" alt="" /></a>
+							</article>
+						</div>
 
-  /* selected link */
-  .container2 a:active {
-    color: #333;
-    text-decoration: none;
-    background-color: white;
-  }
+				</div>
+			</section>
 
-  @keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-@media screen and (max-width: 500px) {
-  #topnav a {
-    float: none;
-    display: block;
-  }
-}
+			<section id="outreach" class="main style2 right fullscreen">
+				<div class="content box style2" style="width: 50%">
+				<header>
+					<h2 style="text-align: right">Outreach</h2>
+					<p style="text-align: right">To bring the fascination of astronomy closer to the public I was part of the volantary Outreach Fellows at MPIA, where I did <a href="https://www.haus-der-astronomie.de/3799502/Astronomy-tours-at-the-Koenigstuhl">guided tours</a>
+						involving a planetarium show and visits to our in-house telescopes. I was also co-organizing the <a href="https://www.girls-day.de">Girl's Day</a> 2019 as well as a part of the Girl's Day 2021, a workshop to give girls a hands-on feeling for the work of an astronomer and fascinate them for (astro)physics.
+			    In 2019 for example, we operated small, remote telescopes to take beautiful pictures of nearby galaxies. They expierenced how we astronomers use filters in different wavelengths to create these colorful images
+			     and learn about the physics behind them. The picture to the right of the Whirlpool Galaxy (M51) was taken on that day. </p>
+				</header>
+				</div>
+			</section>
 
-</style>
-</head>
+		<!-- Contact -->
+			<section id="contact" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Contact me.</h2>
+					</header>
+					<ul class="icons">
+						<li><a href="https://www.iac.es" class="icon solid fa-address-book"></a>
+						<span style="text-align: left; display: inline-block; margin-left: 1em; margin-right: 5em; align-items: first baseline">Alina Boecker<br>
+						Instituto de Astrofísica de Canarias<br>
+						Calle Vía Láctea, s/n<br>
+						E-38205 La Laguna, Tenerife<br>
+						Spain</span></li>
+						<li><a href="mailto:aboecker@iac.es" class="icon solid fa-at"></a><span style="text-align: left; display: inline-block; margin-left: 1em; margin-right: 1em">aboecker@iac.es</span></li>
+					</ul>
+			</section>
 
-<body>
+		<!-- Footer -->
+			<footer id="footer">
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px;">Alina Boecker</h1>
-    <h2 style="font-size:25px;">astrophysicist</h2>
-  </div>
-</div>
+				<!-- Icons -->
+				<!--<ul class="icons">
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Envelope</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+					</ul>-->
 
-  <div class="container" id="aboutme">
-    <div class="image">
-    <img src="alina_2.jpg" style="width:250px; border-radius: 50%;">
-    </div>
-    <div class="text" style="padding-left:50px; padding-right:0px">
-    <h1>About Me</h1>
-    <p>Hi, my name is Alina Boecker. I am currently a PhD student at the <a href="https://www.mpia.de/en">Max-Planck-Institute for Astronomy in Heidelberg, Germany</a>
-      and a fellow of the <a href="https://www.imprs-hd.mpg.de/272029/Boecker-Alina"> International Max Planck Research School for Astronomy and Cosmic Physics at the University of Heidelberg</a>.
-      I am a member of the <a href="https://www.mpia.de/galactic-nuclei"> Galactic Nuclei Research Group</a> lead by Dr. Nadine Neumayer. I am also an <a href="#outreach"> MPIA Outreach fellow</a>.</p>
-        <a href="mailto:boecker@mpia.de">Email me</a>        <a href="https://ui.adsabs.harvard.edu/public-libraries/g9sgoKUoRxiL7UB-L-8ueQ">Publications</a>        <a href="https://orcid.org/0000-0003-2945-106X">OrcID</a>
-    </div>
-  </div>
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
 
-  <div class="topnav" id="topnav">
-      <a class="active" href="#top"> Top </a>
-      <a href="#aboutme"> About Me </a>
-      <a href="#research"> Research </a>
-      <a href="#talks"> Talks </a>
-      <a href="#outreach"> Outreach </a>
-  </div>
+			</footer>
 
-<div class="page" id="research">
-  <h1 style="font-size:50px;">Research</h1>
-  <div class="container" style="justify-content: space-evenly; align-items: center; align-content: space-around">
-  <div class="image" style="flex-basis: 30%;">
-  <div class="container2">
-  <a href="aboutmergerhistories.html">
-      <h2 style="text-align: center; text-decoration: underline;">Merger Histories of Galaxies</h2>
-      <img src="satellitemassfunction.png" width=400px>
-      <p style="text-align: justify; line-height: 150%;font-size: 18px;"> I am interested in disentangling which stars in a galaxy were born from its own gas rescources ("in-situ" origin)
-        and which were brought in by the accretion of other, smaller galaxies ("ex-situ" origin). The in-situ or ex-situ origin of stellar populations inside
-         a galaxy are imprinted on their properties such as their age or metallicity. We can measure such properties from integrated light spectra and recover
-         the mass function of satellites galaxies that completely merged with a galaxy of interest.
-         This is a new observational method, which I developed and tested during my Bachelor's and Master's thesis. </p>
-  <span class="container2"></span>
-  </div>
-  </a>
-  </div>
-  <div class="image" style="flex-basis: 30%;">
-  <div class="container2">
-  <a href="aboutagemetallicitydistributions.html">
-      <h2 style="text-align: center; text-decoration: underline;">Age-Metallicity Distributions from Integrated Spectra</h2>
-      <img src="compare_single_integrated_3.png" width=400px>
-      <p style="text-align: justify; line-height: 150%;font-size: 18px;"> With this project I show that we are able to recover the distributions of ages and metallicities of stellar populations from a single integrated spectrum
-         in agreement with resolved measurements. Whereas the latter is often thought of to be more reliable, it can only be applied to a few nearby systems. Therefore, it is crucial that
-         we develop and test methods that can ultimately provide us with the same information about an object's stellar population content using integrated light alone.</p>
-   <span class="container2"></span>
-   </div>
-   </a>
-  </div>
-  <div class="image" style="flex-basis: 30%;">
-  <div class="container2">
-  <a href="aboutcentersintng.html">
-      <h2 style="text-align: center; text-decoration: underline;">Build-up of Galaxy Centers in TNG50 simulation</h2>
-      <img src="central_mass.png" width=400px>
-      <p style="text-align: justify; line-height: 150%;font-size: 18px;">My current project focusses on the very central few hundred parsecs of galaxies in the TNG50 simulations. With such simulations, we
-      can track back stars in time and determine where they were born and what properties they have. I categorize stars depending on whether they were born inside the center
-      and remain there throughout their life ("in-situ"), were born somewhere else inside the galaxy and then moved to center ("migrated") or if they were brought in from the
-      merger with other galaxies ("ex-situ").</p>
-  <span class="container2"></span>
-  </div>
-  </a>
-  </div>
-  </div>
-</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-<div class="page" id="talks">
-  <h1 style="font-size:50px;">Talks</h1>
-  <div class="container3">
-  <div class="container" style="box-shadow: 0 0 1em #333; padding: 0.5em 1em 0.5em 1em;">
-  <div class="image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dimZ-1OYSrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="text">
-      <h2 style="text-decoration: underline; text-align: center;">Linking Galactic and extragalactic stellar populations with nuclear star clusters</h2>
-      <p style="text-align: justify;"> Watch my talk from the
-        <a href="https://extragalactic-milkyways.org/virtual_meeting/#one">"Linking the Galactic and Extragalactic"</a> virtual meeting on 3rd - 4th December 2020, which was voted in the top 4 of all talks at the conference.
-      I show how the age and metallicity distribution of M54, the nucleus of the Sagittarius dwarf spheriodal galaxy, can be inferred from its integrated spectrum in agreement with measurements from its individual stars.
-      This implies that distributions of stellar population properties can be reliably recovered from more distant object, where only integrated light measurements are available. </p>
-    </div>
-    </div>
-    </div>
-    <div class="container3">
-    <div class="container" style="box-shadow: 0 0 1em #333; padding: 0.5em 1em 0.5em 1em;">
-    <div class="text">
-      <h2 style="text-decoration: underline; text-align: center;">Reconstructing a galaxy's accretion history from integrated spectra</h2>
-      <p style="text-align: justify;">Watch a talk I gave at the online workshop <a href="https://www.esi.ac.at/events/e389/">"Tomographic Reconstructions and their Startling Applications"</a>
-        hosted at the Erwin Schrödinger Institute for Mathematics and Physics in Vienna and taken place from 15th - 25th March 2021. This talk focuses on letting other scientists understand how I apply "tomographic reconstruction"
-        to a galaxy's spectrum in order to reconstruct its merger history. At the beginning of the talk I provide background information to explain to the broader audience how galaxies form and evolve. </p>
-    </div>
-    <div class="image">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jh6RSrML3lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-  </div>
-</div>
-
-<div class="page" id="outreach">
-  <h1 style="font-size:50px;">Outreach</h1>
-  <div class="container">
-  <div class="text" style="width:50%;padding-left:0px;padding-right:100px;text-align:justify">
-    <p>To bring the fascination of astronomy closer to the public I am part of the volantary Outreach Fellows at MPIA. As a cooperation between the MPIA (<a href="https://www.mpia.de/en">Max-Planck-Institute for Astronomy</a>),
-      the LSW (<a href="https://www.lsw.uni-heidelberg.de/?lang=en">Landessternwarte</a>) and the HdA (<a href="https://www.haus-der-astronomie.de/en">Haus der Astronomie</a>), we offer <a href="https://www.haus-der-astronomie.de/3799502/Astronomy-tours-at-the-Koenigstuhl">free guided tours</a> to share our work as astronomers up on the Königstuhl mountain. Our tours involve a planetarium show
-      presenting the current research being done at the astronomy institutes in Heidelberg, a fly through the univserse as well as visits to our telescopes, modern and historic. </p>
-    <p> I was also co-organizing the <a href="https://www.girls-day.de">Girl's Day</a> 2019 as well as a part of the Girl's Day 2021, a workshop to give girls a hands-on feeling for the work of an astronomer and fascinate them for (astro)physics.
-    In 2019 for example, we operated small, remote telescopes to take beautiful pictures of nearby galaxies. They expierenced how we astronomers use filters in different wavelengths to create these colorful images
-     and learn about the physics behind them. The picture to the right of the Whirlpool Galaxy (M51) was taken on that day.</p>
-  </div>
-  <div class="image" style="flex-basis: 40%;">
-    <div class="container" style="box-shadow: 0 0 1em #333; padding: 1em 1em 1em 1em;">
-  <img src="m51.png" width="100%">
-  </div>
-  </div>
-  </div>
-</div>
-
-<script>
-
-/*var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("topnav").style.top = "0";
-  } else {
-    document.getElementById("topnav").style.top = "-250px";
-  }
-  prevScrollpos = currentScrollPos;
-}*/
-/*function top() {
-    window.scrollBy({ top: 350, left: 0, behavior: "smooth" })
-};
-
-function bottom() {
-    window.setTimeout( function () { top(); }, 3000 );
-};
-bottom();*/
-</script>
-</body>
+	</body>
 </html>
